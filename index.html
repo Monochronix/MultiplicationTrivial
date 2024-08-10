@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Trivial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Kyle Huang - Multiplication Trivial</h1>
+        </div>
+        
+        <div class="game">
+            <div id="question"></div>
+            <div class="options">
+                <button class="option" data-answer="1">Option 1</button>
+                <button class="option" data-answer="2">Option 2</button>
+                <button class="option" data-answer="3">Option 3</button>
+                <button class="option" data-answer="4">Option 4</button>
+            </div>
+        </div>
+        <div id="feedback"></div>
+        <button id="next">Next Question</button>
+    </div>
+    <div class="audio">
+        <audio controls autoplay>
+            <source src="espresso.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+    </div>
+    <audio id="correct-sound" src="correct.wav" preload="auto"></audio>
+    <audio id="incorrect-sound" src="incorrect.wav" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

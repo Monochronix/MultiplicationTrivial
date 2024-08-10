@@ -1,0 +1,126 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-clip: border-box;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* Headings */
+h1 {
+    color: #FFFF;
+    margin-bottom: 20px;
+}
+
+/* Game styles */
+.game {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.audio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.option {
+    
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.option.correct {
+    background-color: rgba(0, 255, 0, 0.25);; /* Green */
+    color: white;
+}
+
+.option.incorrect {
+    background-color: rgba(255, 0, 0, 0.25); /* Red */
+    color: white;
+}
+
+/* Reset option styles after feedback */
+.option.reset {
+    background: rgba(255, 255, 255, 0.25);
+    color: black;
+}
+
+
+/* Feedback and Next Button */
+#feedback {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#next {
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #FFFF;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#next:hover {
+    background-color: #ff8c00;
+}
