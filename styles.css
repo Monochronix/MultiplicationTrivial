@@ -39,12 +39,7 @@ h1 {
     color: #FFFF;
     margin-bottom: 20px;
 }
-.audio {
-    margin-bottom: 20px; 
-    display: block;
-    margin-left: 5px;
-    margin-right: 5px;
-}
+
 /* Game styles */
 .game {
     background-color: #333;
