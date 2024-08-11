@@ -150,6 +150,9 @@ function checkAnswer(event) {
         updateElo(false);
         playSound(false); // Play incorrect sound
     }
+
+    // Print the player's Elo rating to the console
+    console.log(`Current Elo rating: ${userElo.toFixed(2)}`);
 }
 
 
